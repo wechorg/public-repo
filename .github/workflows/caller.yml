@@ -7,8 +7,10 @@ on:
 jobs:
   call-same-repo:
     runs-on: ubuntu-latest
-    uses: wizard-whitebeard/public-repo/.github/workflows/main.yml@main
+    steps:
+    - uses: wechorg/public-repo/.github/workflows/main.yml@main
     
-  call-internal-repo:
-    runs-on: ubuntu-latest
-    uses: wizard-whitebeard/internal-repo/.github/workflows/called.yml@main
+#   call-internal-repo:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: wechorg/internal-repo/.github/workflows/called.yml@main
